@@ -18,7 +18,7 @@ public class picture {
      Define two hashmap
 
      map1 is the  (location of word) ->  word (like  0-> to)
-     map2 is the word -> location of word (like to-> 0)
+     map2 is the word -> location of  word (like to-> 0)
     */
     static HashMap<String, String> map1 = new HashMap<String, String>();
     static HashMap<String, String> map2 = new HashMap<String, String>();
