@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 My father was a self-taught mandolin player. He was one of the best string instrument players in our town. He could not read music OF
+=======
+My father was a self-taught mandolin player. He was one of the best string instrument players in our town. He could not read music
+>>>>>>> C4

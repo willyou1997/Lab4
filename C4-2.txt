@@ -1,1 +1,5 @@
+<<<<<<< HEAD
  but if he heard a tune a few times, he could play it. When he was younger, he was a member of a small country music band. A
+=======
+ but if he heard a tune a few times, he could play it. When he was younger, he was a member of a small country music band.
+>>>>>>> C4
