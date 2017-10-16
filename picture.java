@@ -16,9 +16,14 @@ import javax.swing.border.*;
 public class picture {
     /*
      Define two hashmap
+<<<<<<< HEAD
+     map1 is the (location of word) ->  word (like  0-> to)
+     map2 is the word -> location of word (like to-> 0)
+=======
 
      map1 is the  (location of word) ->  word (like  0-> to)
      map2 is the word -> location of  word (like to-> 0)
+>>>>>>> partner/master
     */
     static HashMap<String, String> map1 = new HashMap<String, String>();
     static HashMap<String, String> map2 = new HashMap<String, String>();
@@ -35,8 +40,13 @@ public class picture {
 
     /* Show graph and use the graphviz to paint the graph*/
     public static void showDirectedGraph(int[][] graph, String[] target) {
+<<<<<<< HEAD
+        GraphViz gViz = new GraphViz("E:\\nba",
+                "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe");
+=======
         GraphViz gViz = new GraphViz("G:\\nba",
                 "F:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe");
+>>>>>>> partner/master
         int ch;
         int ch2;
 
@@ -96,7 +106,7 @@ public class picture {
         }
     }
 
-    /*Get the queryBridgeWords of name1 and name2 which use by function queryBridgeWords */
+    /*Get the queryBridgeWords of name1 an  d name2 which use by function queryBridgeWords */
     public static String queryBridgeWords(String name1, String name2) {
         String blank;
         String aim;
@@ -105,10 +115,17 @@ public class picture {
 
         blank = aim = "";
 
+<<<<<<< HEAD
+        if (map1.containsValue(name1) == false && map1.containsValue(name2)) /*Two case which name1 and name2 not exist*/ 
+        {
+            aim = "No " + name1 +"  " + name2 + " in the graph!";
+        } 
+=======
         if (map1.containsValue(name1) == false && map1.containsValue(name2)) /*Two case which name1 and name2 not exist*/
         {
             aim = "No " + name1 +"  " + name2 + " in the graph!";
         }
+>>>>>>> partner/master
         else if(map1.containsValue(name1) == false) {
         	aim = "No " + name1 + " in the graph!";
         }
@@ -142,7 +159,11 @@ public class picture {
 
     /*Use the function of GetBright() and get the right txt*/
     public static String generateNewText(String input) {
+<<<<<<< HEAD
+   
+=======
 
+>>>>>>> partner/master
     	input = input.trim().replaceAll("[^A-Za-z., \n?!:;¡ª_(){}\"\'-]","")
         		.replaceAll("[^A-Za-z]"," ").replaceAll(" +"," ").toLowerCase();
         String[] test = input.split(" ");
@@ -179,7 +200,11 @@ public class picture {
 
         return blank;
     }
+<<<<<<< HEAD
+ 
+=======
 
+>>>>>>> partner/master
     /*Use floyd to get the shortest path of any two points*/
     public static String ShortLine(String word1, String word2) {
     	 int ch,ch2,size;
@@ -240,8 +265,13 @@ public class picture {
              if (next == 0) {
                  blank = "No path from " + word1 + " to " + word2 + "!";
              } else {
+<<<<<<< HEAD
+                 GraphViz gViz = new GraphViz("E:\\nba",
+                         "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe");
+=======
                  GraphViz gViz = new GraphViz("G:\\nba",
                          "F:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe");
+>>>>>>> partner/master
 
                  gViz.start_graph();
 
@@ -268,7 +298,11 @@ public class picture {
                      e.printStackTrace();
                  }
                  try {
+<<<<<<< HEAD
+                 String cmdText = "cmd /c start " + "E:\\nba\\temp.gif";
+=======
                  String cmdText = "cmd /c start " + "G:\\nba\\temp.gif";
+>>>>>>> partner/master
                  Runtime.getRuntime().exec(cmdText);
                  } catch (IOException e) {
                  e.printStackTrace();
@@ -312,7 +346,11 @@ public class picture {
                      {
                          return blank;
                      }
+<<<<<<< HEAD
+                      
+=======
 
+>>>>>>> partner/master
                  }
                  else
                  {
@@ -372,7 +410,11 @@ class GuiGraph extends JPanel implements ActionListener {
         button_p3_3.addActionListener(this);
         button_p3_4.addActionListener(this);
 
+<<<<<<< HEAD
+        	
+=======
 
+>>>>>>> partner/master
         p1.setBorder(new TitledBorder("File"));
         p1.add(lable1);
         p1.add(pathTxt);
@@ -499,7 +541,11 @@ class GuiGraph extends JPanel implements ActionListener {
         */
         if (source == graphShow) {
             try {
+<<<<<<< HEAD
+                String cmdText = "cmd /c start " + "E:\\nba\\temp.gif";
+=======
                 String cmdText = "cmd /c start " + "G:\\nba\\temp.gif";
+>>>>>>> partner/master
                 Runtime.getRuntime().exec(cmdText);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -538,9 +584,15 @@ class GuiGraph extends JPanel implements ActionListener {
         */
         if (source == button_p3_3) {
             String Word1 = JOptionPane.showInputDialog(picture.frame,
+<<<<<<< HEAD
+                    "Input word 1:");
+            String Word2 = JOptionPane.showInputDialog(picture.frame,
+                    "Input word 2:");
+=======
                     "Input the word 1:");
             String Word2 = JOptionPane.showInputDialog(picture.frame,
                     "Input the word 2:");
+>>>>>>> partner/master
             JOptionPane.showMessageDialog(picture.frame,
                 picture.ShortLine(Word1, Word2));
         }
@@ -553,6 +605,16 @@ class GuiGraph extends JPanel implements ActionListener {
     	   String h=picture.randomWalk();
            System.out.print(h);
            try{
+<<<<<<< HEAD
+               File file = new File("E:\\nba\\tete.txt");
+               PrintStream ps = new PrintStream(new FileOutputStream(file));  
+
+               ps.println(h);
+             } catch (FileNotFoundException e) {  
+                   e.printStackTrace();  
+           }  
+           JOptionPane.showMessageDialog(picture.frame, "Write in txt over");    
+=======
                File file = new File("G:\\nba\\tete.txt");
                PrintStream ps = new PrintStream(new FileOutputStream(file));
 
@@ -561,6 +623,7 @@ class GuiGraph extends JPanel implements ActionListener {
                    e.printStackTrace();
            }
            JOptionPane.showMessageDialog(picture.frame, "Write in txt over");
+>>>>>>> partner/master
         }
     }
 
