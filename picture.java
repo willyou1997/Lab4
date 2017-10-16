@@ -106,7 +106,7 @@ public class picture {
         }
     }
 
-    /*Get the queryBridgeWords of name1 and name2 which use by function queryBridgeWords */
+    /*Get the queryBridgeWords of name1 an  d name2 which use by function queryBridgeWords */
     public static String queryBridgeWords(String name1, String name2) {
         String blank;
         String aim;

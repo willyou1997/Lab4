@@ -2,5 +2,5 @@
 way->she she->came came->into into->place place->i i->knew knew->miss miss->like like->the the->way 
 =======
 resources->are are->developed to->hello hello->to
-ha
+ha  uu
 >>>>>>> partner/master
