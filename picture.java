@@ -68,7 +68,7 @@ public class picture {
         }
     }
 
-    /*Get the bridgeWord of name1 and name2 which main use by function of generateNewText */
+    /*Get the bridgeWord of name1  and name2 which main use by function of generateNewText */
     public static String GetBright(String name1, String name2) {
         String blank;
         String aim;

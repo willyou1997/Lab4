@@ -4,5 +4,9 @@ To seek out new life and new civilizations?
 =======
 In the big data time, servitization becomes one of the important # development trends - of the IT world.
 More and more software resources are developed and existed in the format of services in Internet.
+<<<<<<< HEAD
 ha hs
+=======
+ha ha
+>>>>>>> origin/gyx
 >>>>>>> partner/master
